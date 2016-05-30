@@ -8,9 +8,7 @@ group :development do
     gem 'sqlite3'
 end    
 # Use SCSS for stylesheets
-group :production do
-  gem 'pg'
-end
+
 
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -49,5 +47,9 @@ group :development do
   gem 'web-console', '~> 2.0'
 end
 
+group :production do
+    gem 'rails_12factor', '~> 0.0.3'
+    gem 'pg', '~> 0.18.4'
+end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
